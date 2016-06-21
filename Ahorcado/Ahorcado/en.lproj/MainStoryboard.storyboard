@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Ahorcado View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="AhorcadoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ahorcado_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="rA9-F0-9wU">
+                                <rect key="frame" x="79" y="78" width="162" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="dGw-IX-uLw"/>
+                                    <constraint firstAttribute="height" constant="194" id="nnY-Jj-5LE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="_ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg4-OD-WMe">
+                                <rect key="frame" x="20" y="20" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FRu-9P-0B7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szw-Eu-lIR">
+                                <rect key="frame" x="12" y="280" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="RHq-UC-H3H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="a">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="WBL-rT-JxF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeU-R6-Dvc">
+                                <rect key="frame" x="52" y="280" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="8Tb-M6-C2y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="9eR-bp-Jmg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbX-PH-I91">
+                                <rect key="frame" x="94" y="280" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="HCI-hm-5Ov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="c">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="gnH-x8-MCm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LO-3e-p6L">
+                                <rect key="frame" x="136" y="280" width="34" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="d">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="0ys-vB-dOO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuB-wc-3LB">
+                                <rect key="frame" x="11" y="321" width="33" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="WAB-QO-yWB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="h">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="sDi-Dz-1o0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5h-XD-1x9">
+                                <rect key="frame" x="52" y="321" width="34" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="i">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="ID4-BN-3jC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acL-7Y-uS0">
+                                <rect key="frame" x="94" y="321" width="34" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="j">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="9Ig-kA-H2n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sea-zL-VDK">
+                                <rect key="frame" x="136" y="321" width="34" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="k">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="H8E-0a-iun"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwC-0e-jP4">
+                                <rect key="frame" x="12" y="362" width="33" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="TKF-lz-W0F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ñ">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="af4-tj-fPB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-XK-Pbh">
+                                <rect key="frame" x="53" y="363" width="33" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="o">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="KiZ-Ge-voQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dW-QB-8rz">
+                                <rect key="frame" x="94" y="363" width="34" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="p">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="2An-Xp-UvP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqZ-un-yYa">
+                                <rect key="frame" x="136" y="363" width="34" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="q">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="Rqj-lw-9sK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpa-2q-S1S">
+                                <rect key="frame" x="178" y="280" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="LGL-t1-4tZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="e">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="40f-Mm-CTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N91-Zt-u7J">
+                                <rect key="frame" x="221" y="280" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="vs8-bh-w87"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="f">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="D18-iE-2kZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyj-er-VPU">
+                                <rect key="frame" x="263" y="280" width="33" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="g">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="LKZ-Fj-0Le"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYA-m9-ikG">
+                                <rect key="frame" x="178" y="321" width="34" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="l">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="6Mf-1t-uZS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfF-N9-56J">
+                                <rect key="frame" x="221" y="321" width="34" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="m">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="jhU-EI-f9p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETx-Qd-cv1">
+                                <rect key="frame" x="263" y="321" width="33" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="n">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="8WC-eu-M6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-Pr-I0q">
+                                <rect key="frame" x="178" y="363" width="34" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="r">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="1G1-PS-KBJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6G-Vt-9nC">
+                                <rect key="frame" x="221" y="363" width="34" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="s">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="fas-48-Lz2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-oY-uzJ">
+                                <rect key="frame" x="54" y="403" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="XcH-nu-LAv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="v">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="PjI-PQ-3nd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CL-21-hat">
+                                <rect key="frame" x="94" y="403" width="34" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="w">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="MLb-f9-Kx8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l43-Y3-9kp">
+                                <rect key="frame" x="139" y="403" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="ZlD-qe-dCJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="Ifx-OQ-4hr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s75-V7-p9V">
+                                <rect key="frame" x="180" y="403" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="4gV-gx-v9k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="y">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="pwc-2R-L2h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDy-ht-6I9">
+                                <rect key="frame" x="221" y="403" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="3t2-C3-Ffd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="z">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="Xnd-Lk-Tn3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-VQ-f6F">
+                                <rect key="frame" x="263" y="363" width="33" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="t">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="Ki5-To-GYY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVR-dt-eX3">
+                                <rect key="frame" x="12" y="403" width="33" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="SIZ-oD-3Tm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="u">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letraPulsada:" destination="2" eventType="touchUpInside" id="4zD-mb-l2v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KqZ-un-yYa" firstAttribute="top" secondItem="Sea-zL-VDK" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0Ga-De-eiX"/>
+                            <constraint firstItem="s75-V7-p9V" firstAttribute="baseline" secondItem="qHn-oY-uzJ" secondAttribute="baseline" type="default" id="0b1-W1-5wQ"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="139" id="1AS-d0-0fr"/>
+                            <constraint firstAttribute="trailing" secondItem="Lg4-OD-WMe" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1BL-RC-WXK"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="bottom" secondItem="6CL-21-hat" secondAttribute="bottom" type="default" id="1MQ-CY-sNc"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="baseline" secondItem="qHn-oY-uzJ" secondAttribute="baseline" type="default" id="1Vn-AW-z7b"/>
+                            <constraint firstItem="6CL-21-hat" firstAttribute="top" secondItem="0dW-QB-8rz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2jQ-ED-VLB"/>
+                            <constraint firstItem="FYA-m9-ikG" firstAttribute="top" secondItem="Tpa-2q-S1S" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2qY-BE-47M"/>
+                            <constraint firstItem="fuB-wc-3LB" firstAttribute="baseline" secondItem="P5h-XD-1x9" secondAttribute="baseline" type="default" id="3ft-40-7I6"/>
+                            <constraint firstItem="oyj-er-VPU" firstAttribute="leading" secondItem="ZfF-N9-56J" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="3xH-mV-ITP"/>
+                            <constraint firstAttribute="trailing" secondItem="s75-V7-p9V" secondAttribute="trailing" constant="106" id="4BS-Vn-FA3"/>
+                            <constraint firstItem="RVR-dt-eX3" firstAttribute="top" secondItem="wwC-0e-jP4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4Cn-G3-fhM"/>
+                            <constraint firstItem="Sea-zL-VDK" firstAttribute="top" secondItem="6LO-3e-p6L" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4lt-vF-WWu"/>
+                            <constraint firstItem="fuB-wc-3LB" firstAttribute="top" secondItem="szw-Eu-lIR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="58w-O4-P7E"/>
+                            <constraint firstItem="zs3-XK-Pbh" firstAttribute="baseline" secondItem="wwC-0e-jP4" secondAttribute="baseline" type="default" id="6Za-7M-OyJ"/>
+                            <constraint firstItem="D6G-Vt-9nC" firstAttribute="baseline" secondItem="wwC-0e-jP4" secondAttribute="baseline" type="default" id="7xh-pC-7Rv"/>
+                            <constraint firstItem="FYA-m9-ikG" firstAttribute="trailing" secondItem="Tpa-2q-S1S" secondAttribute="trailing" type="default" id="8e3-js-5eP"/>
+                            <constraint firstItem="RVR-dt-eX3" firstAttribute="baseline" secondItem="kDy-ht-6I9" secondAttribute="baseline" type="default" id="8eZ-6u-PMw"/>
+                            <constraint firstItem="ETx-Qd-cv1" firstAttribute="leading" secondItem="ZfF-N9-56J" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ATi-ee-lWf"/>
+                            <constraint firstItem="Tpa-2q-S1S" firstAttribute="leading" secondItem="6LO-3e-p6L" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="BkY-gc-pZR"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="baseline" secondItem="RVR-dt-eX3" secondAttribute="baseline" type="default" id="Bol-3i-kD2"/>
+                            <constraint firstItem="acL-7Y-uS0" firstAttribute="top" secondItem="Sea-zL-VDK" secondAttribute="top" type="default" id="C6J-C3-6TJ"/>
+                            <constraint firstItem="wwC-0e-jP4" firstAttribute="baseline" secondItem="fjo-VQ-f6F" secondAttribute="baseline" type="default" id="CNa-mJ-1TT"/>
+                            <constraint firstItem="KqZ-un-yYa" firstAttribute="baseline" secondItem="hvh-Pr-I0q" secondAttribute="baseline" type="default" id="CjP-Lr-bnh"/>
+                            <constraint firstItem="N91-Zt-u7J" firstAttribute="top" secondItem="rA9-F0-9wU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CnR-Z6-fey"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="bottom" secondItem="RVR-dt-eX3" secondAttribute="bottom" type="default" id="Dg4-mJ-Epc"/>
+                            <constraint firstItem="wwC-0e-jP4" firstAttribute="baseline" secondItem="0dW-QB-8rz" secondAttribute="baseline" type="default" id="DhP-3y-FMv"/>
+                            <constraint firstItem="D6G-Vt-9nC" firstAttribute="leading" secondItem="ZfF-N9-56J" secondAttribute="leading" type="default" id="Dx7-z4-p3w"/>
+                            <constraint firstItem="DeU-R6-Dvc" firstAttribute="top" secondItem="szw-Eu-lIR" secondAttribute="top" type="default" id="E9R-st-Vn2"/>
+                            <constraint firstItem="oyj-er-VPU" firstAttribute="leading" secondItem="N91-Zt-u7J" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="GFV-K8-Kb9"/>
+                            <constraint firstItem="Tpa-2q-S1S" firstAttribute="top" secondItem="rA9-F0-9wU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GHu-1s-Ak0"/>
+                            <constraint firstItem="6LO-3e-p6L" firstAttribute="top" secondItem="rA9-F0-9wU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Hhy-82-sAJ"/>
+                            <constraint firstItem="hvh-Pr-I0q" firstAttribute="baseline" secondItem="D6G-Vt-9nC" secondAttribute="baseline" type="default" id="I8z-2b-LGk"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="baseline" secondItem="kDy-ht-6I9" secondAttribute="baseline" type="default" id="ILK-bb-jOC"/>
+                            <constraint firstItem="kDy-ht-6I9" firstAttribute="bottom" secondItem="s75-V7-p9V" secondAttribute="bottom" type="default" id="JTb-ey-1pj"/>
+                            <constraint firstItem="hvh-Pr-I0q" firstAttribute="baseline" secondItem="fjo-VQ-f6F" secondAttribute="baseline" type="default" id="KMh-3G-fiW"/>
+                            <constraint firstItem="s75-V7-p9V" firstAttribute="baseline" secondItem="6CL-21-hat" secondAttribute="baseline" type="default" id="Kof-0x-bPq"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="baseline" secondItem="RVR-dt-eX3" secondAttribute="baseline" type="default" id="L4Q-48-rtd"/>
+                            <constraint firstItem="D6G-Vt-9nC" firstAttribute="baseline" secondItem="zs3-XK-Pbh" secondAttribute="baseline" type="default" id="L6P-2F-zF3"/>
+                            <constraint firstItem="wwC-0e-jP4" firstAttribute="baseline" secondItem="hvh-Pr-I0q" secondAttribute="baseline" type="default" id="LgT-W0-yCY"/>
+                            <constraint firstItem="6LO-3e-p6L" firstAttribute="leading" secondItem="xbX-PH-I91" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="M1A-ou-a1p"/>
+                            <constraint firstItem="0dW-QB-8rz" firstAttribute="top" secondItem="acL-7Y-uS0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MjM-L7-5b8"/>
+                            <constraint firstItem="ETx-Qd-cv1" firstAttribute="trailing" secondItem="fjo-VQ-f6F" secondAttribute="trailing" type="default" id="N5g-vV-JzH"/>
+                            <constraint firstItem="s75-V7-p9V" firstAttribute="baseline" secondItem="kDy-ht-6I9" secondAttribute="baseline" type="default" id="NPV-5n-qSf"/>
+                            <constraint firstItem="0dW-QB-8rz" firstAttribute="leading" secondItem="zs3-XK-Pbh" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="O6o-wK-o1x"/>
+                            <constraint firstItem="fuB-wc-3LB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="11" id="POF-Ov-sdK"/>
+                            <constraint firstItem="zs3-XK-Pbh" firstAttribute="leading" secondItem="wwC-0e-jP4" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="PSU-TI-ZgP"/>
+                            <constraint firstItem="kDy-ht-6I9" firstAttribute="top" secondItem="D6G-Vt-9nC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="PuD-eL-eLD"/>
+                            <constraint firstItem="P5h-XD-1x9" firstAttribute="top" secondItem="DeU-R6-Dvc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QUd-ai-O0S"/>
+                            <constraint firstItem="0dW-QB-8rz" firstAttribute="baseline" secondItem="fjo-VQ-f6F" secondAttribute="baseline" type="default" id="QVV-TD-AFh"/>
+                            <constraint firstItem="ZfF-N9-56J" firstAttribute="top" secondItem="N91-Zt-u7J" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="REU-9b-IB9"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="baseline" secondItem="s75-V7-p9V" secondAttribute="baseline" type="default" id="RMC-fM-PkW"/>
+                            <constraint firstItem="zs3-XK-Pbh" firstAttribute="top" secondItem="P5h-XD-1x9" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SCE-w4-QGY"/>
+                            <constraint firstItem="KqZ-un-yYa" firstAttribute="leading" secondItem="Sea-zL-VDK" secondAttribute="leading" type="default" id="SCd-lX-ehh"/>
+                            <constraint firstItem="acL-7Y-uS0" firstAttribute="top" secondItem="xbX-PH-I91" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SOR-4c-J7M"/>
+                            <constraint firstItem="D6G-Vt-9nC" firstAttribute="baseline" secondItem="KqZ-un-yYa" secondAttribute="baseline" type="default" id="Spm-5B-b83"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="top" secondItem="KqZ-un-yYa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Tdd-4W-VkK"/>
+                            <constraint firstItem="Lg4-OD-WMe" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="TzK-Xk-Lwr"/>
+                            <constraint firstItem="ETx-Qd-cv1" firstAttribute="top" secondItem="oyj-er-VPU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UKw-L9-TSM"/>
+                            <constraint firstItem="acL-7Y-uS0" firstAttribute="baseline" secondItem="P5h-XD-1x9" secondAttribute="baseline" type="default" id="UPp-DC-aah"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="54" id="UWY-kk-Xi9"/>
+                            <constraint firstItem="6LO-3e-p6L" firstAttribute="leading" secondItem="acL-7Y-uS0" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Vci-Jx-mLa"/>
+                            <constraint firstItem="hvh-Pr-I0q" firstAttribute="trailing" secondItem="FYA-m9-ikG" secondAttribute="trailing" type="default" id="WSg-vT-Yn5"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="top" secondItem="s75-V7-p9V" secondAttribute="top" type="default" id="X6c-Vp-I2K"/>
+                            <constraint firstItem="FYA-m9-ikG" firstAttribute="top" secondItem="Sea-zL-VDK" secondAttribute="top" type="default" id="Xmd-PG-XMM"/>
+                            <constraint firstAttribute="trailing" secondItem="oyj-er-VPU" secondAttribute="trailing" constant="24" id="YDF-aa-LsH"/>
+                            <constraint firstItem="fjo-VQ-f6F" firstAttribute="leading" secondItem="ETx-Qd-cv1" secondAttribute="leading" type="default" id="YDY-o3-hr8"/>
+                            <constraint firstAttribute="bottom" secondItem="RVR-dt-eX3" secondAttribute="bottom" constant="24" id="ZAl-K4-I3A"/>
+                            <constraint firstItem="6CL-21-hat" firstAttribute="baseline" secondItem="l43-Y3-9kp" secondAttribute="baseline" type="default" id="ZBu-dU-utl"/>
+                            <constraint firstItem="hvh-Pr-I0q" firstAttribute="leading" secondItem="FYA-m9-ikG" secondAttribute="leading" type="default" id="ZIz-Uc-hml"/>
+                            <constraint firstItem="D6G-Vt-9nC" firstAttribute="baseline" secondItem="fjo-VQ-f6F" secondAttribute="baseline" type="default" id="aTe-nP-ZKo"/>
+                            <constraint firstItem="FYA-m9-ikG" firstAttribute="leading" secondItem="Sea-zL-VDK" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="aaX-36-IgZ"/>
+                            <constraint firstItem="ZfF-N9-56J" firstAttribute="top" secondItem="FYA-m9-ikG" secondAttribute="top" type="default" id="avc-PU-icD"/>
+                            <constraint firstItem="fjo-VQ-f6F" firstAttribute="baseline" secondItem="KqZ-un-yYa" secondAttribute="baseline" type="default" id="avf-4R-igg"/>
+                            <constraint firstItem="wwC-0e-jP4" firstAttribute="top" secondItem="fuB-wc-3LB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="b5l-aB-kOv"/>
+                            <constraint firstItem="RVR-dt-eX3" firstAttribute="baseline" secondItem="s75-V7-p9V" secondAttribute="baseline" type="default" id="bMt-nU-cjB"/>
+                            <constraint firstItem="fjo-VQ-f6F" firstAttribute="bottom" secondItem="D6G-Vt-9nC" secondAttribute="bottom" type="default" id="cRv-Hq-KHJ"/>
+                            <constraint firstItem="RVR-dt-eX3" firstAttribute="leading" secondItem="wwC-0e-jP4" secondAttribute="leading" type="default" id="chn-0f-nOU"/>
+                            <constraint firstItem="KqZ-un-yYa" firstAttribute="baseline" secondItem="wwC-0e-jP4" secondAttribute="baseline" type="default" id="ddj-Ab-xN4"/>
+                            <constraint firstItem="fuB-wc-3LB" firstAttribute="top" secondItem="P5h-XD-1x9" secondAttribute="top" type="default" id="dee-4s-fmd"/>
+                            <constraint firstItem="0dW-QB-8rz" firstAttribute="baseline" secondItem="zs3-XK-Pbh" secondAttribute="baseline" type="default" id="e5K-uK-Z5a"/>
+                            <constraint firstItem="Sea-zL-VDK" firstAttribute="baseline" secondItem="FYA-m9-ikG" secondAttribute="baseline" type="default" id="e6n-yl-Ugk"/>
+                            <constraint firstItem="6CL-21-hat" firstAttribute="leading" secondItem="0dW-QB-8rz" secondAttribute="leading" type="default" id="eP4-Ka-rDd"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="top" secondItem="6CL-21-hat" secondAttribute="top" type="default" id="f1u-dB-MjI"/>
+                            <constraint firstItem="hvh-Pr-I0q" firstAttribute="top" secondItem="FYA-m9-ikG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="fzD-U3-4YF"/>
+                            <constraint firstItem="D6G-Vt-9nC" firstAttribute="top" secondItem="ZfF-N9-56J" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="g32-s7-oYp"/>
+                            <constraint firstItem="P5h-XD-1x9" firstAttribute="leading" secondItem="fuB-wc-3LB" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gMA-Py-bDB"/>
+                            <constraint firstItem="Tpa-2q-S1S" firstAttribute="leading" secondItem="Sea-zL-VDK" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="gbf-af-Vvg"/>
+                            <constraint firstItem="s75-V7-p9V" firstAttribute="top" secondItem="kDy-ht-6I9" secondAttribute="top" type="default" id="h34-9h-2kX"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="top" secondItem="zs3-XK-Pbh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hhf-VR-Brf"/>
+                            <constraint firstItem="s75-V7-p9V" firstAttribute="bottom" secondItem="l43-Y3-9kp" secondAttribute="bottom" type="default" id="hkd-qZ-fu1"/>
+                            <constraint firstItem="P5h-XD-1x9" firstAttribute="top" secondItem="acL-7Y-uS0" secondAttribute="top" type="default" id="huw-dd-0S3"/>
+                            <constraint firstItem="Lg4-OD-WMe" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hvw-S9-iot"/>
+                            <constraint firstItem="zs3-XK-Pbh" firstAttribute="baseline" secondItem="KqZ-un-yYa" secondAttribute="baseline" type="default" id="iWs-s7-ZNs"/>
+                            <constraint firstItem="0dW-QB-8rz" firstAttribute="baseline" secondItem="KqZ-un-yYa" secondAttribute="baseline" type="default" id="jnm-Wm-FsA"/>
+                            <constraint firstItem="hvh-Pr-I0q" firstAttribute="baseline" secondItem="0dW-QB-8rz" secondAttribute="baseline" type="default" id="jrn-ed-rYw"/>
+                            <constraint firstItem="ZfF-N9-56J" firstAttribute="baseline" secondItem="ETx-Qd-cv1" secondAttribute="baseline" type="default" id="k2o-dV-OPE"/>
+                            <constraint firstItem="Sea-zL-VDK" firstAttribute="baseline" secondItem="acL-7Y-uS0" secondAttribute="baseline" type="default" id="kEG-ZP-T8a"/>
+                            <constraint firstItem="Lg4-OD-WMe" firstAttribute="centerX" secondItem="rA9-F0-9wU" secondAttribute="centerX" type="default" id="lOU-qp-OdX"/>
+                            <constraint firstItem="ZfF-N9-56J" firstAttribute="leading" secondItem="N91-Zt-u7J" secondAttribute="leading" type="default" id="lPd-5u-Tia"/>
+                            <constraint firstItem="KqZ-un-yYa" firstAttribute="leading" secondItem="0dW-QB-8rz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="mrU-tr-IGX"/>
+                            <constraint firstItem="Sea-zL-VDK" firstAttribute="leading" secondItem="xbX-PH-I91" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="mzV-Od-rn1"/>
+                            <constraint firstItem="zs3-XK-Pbh" firstAttribute="baseline" secondItem="hvh-Pr-I0q" secondAttribute="baseline" type="default" id="nSe-H5-T7b"/>
+                            <constraint firstAttribute="trailing" secondItem="kDy-ht-6I9" secondAttribute="trailing" constant="65" id="oYH-hN-rLa"/>
+                            <constraint firstItem="xbX-PH-I91" firstAttribute="leading" secondItem="P5h-XD-1x9" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="p4m-0s-svZ"/>
+                            <constraint firstItem="fjo-VQ-f6F" firstAttribute="baseline" secondItem="zs3-XK-Pbh" secondAttribute="baseline" type="default" id="pDp-l5-4IX"/>
+                            <constraint firstItem="N91-Zt-u7J" firstAttribute="top" secondItem="oyj-er-VPU" secondAttribute="top" type="default" id="pWL-dB-UCu"/>
+                            <constraint firstItem="acL-7Y-uS0" firstAttribute="leading" secondItem="P5h-XD-1x9" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="poO-fG-XpQ"/>
+                            <constraint firstItem="xbX-PH-I91" firstAttribute="top" secondItem="rA9-F0-9wU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qJI-uz-Vds"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="top" secondItem="RVR-dt-eX3" secondAttribute="top" type="default" id="qPg-pB-ugX"/>
+                            <constraint firstItem="FYA-m9-ikG" firstAttribute="baseline" secondItem="ZfF-N9-56J" secondAttribute="baseline" type="default" id="qjz-QY-bJ0"/>
+                            <constraint firstItem="DeU-R6-Dvc" firstAttribute="leading" secondItem="fuB-wc-3LB" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="qsv-c8-F8X"/>
+                            <constraint firstItem="fjo-VQ-f6F" firstAttribute="leading" secondItem="D6G-Vt-9nC" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="rTJ-xY-u17"/>
+                            <constraint firstItem="DeU-R6-Dvc" firstAttribute="top" secondItem="rA9-F0-9wU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="s16-1a-Voa"/>
+                            <constraint firstItem="xbX-PH-I91" firstAttribute="leading" secondItem="DeU-R6-Dvc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="sEH-4U-N3N"/>
+                            <constraint firstItem="ZfF-N9-56J" firstAttribute="top" secondItem="ETx-Qd-cv1" secondAttribute="top" type="default" id="sTZ-gk-OhT"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="baseline" secondItem="kDy-ht-6I9" secondAttribute="baseline" type="default" id="t2L-D4-j9I"/>
+                            <constraint firstItem="fjo-VQ-f6F" firstAttribute="top" secondItem="ETx-Qd-cv1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tNM-eg-y2K"/>
+                            <constraint firstItem="0dW-QB-8rz" firstAttribute="trailing" secondItem="6CL-21-hat" secondAttribute="trailing" type="default" id="udL-u6-I2O"/>
+                            <constraint firstItem="szw-Eu-lIR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="12" id="utp-cD-YEf"/>
+                            <constraint firstItem="6CL-21-hat" firstAttribute="baseline" secondItem="qHn-oY-uzJ" secondAttribute="baseline" type="default" id="uyn-Og-fqn"/>
+                            <constraint firstItem="6CL-21-hat" firstAttribute="baseline" secondItem="RVR-dt-eX3" secondAttribute="baseline" type="default" id="v4J-i3-VHC"/>
+                            <constraint firstItem="s75-V7-p9V" firstAttribute="top" secondItem="hvh-Pr-I0q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xqH-pR-uhD"/>
+                            <constraint firstItem="kDy-ht-6I9" firstAttribute="baseline" secondItem="6CL-21-hat" secondAttribute="baseline" type="default" id="yPO-SO-ezC"/>
+                            <constraint firstItem="l43-Y3-9kp" firstAttribute="top" secondItem="6CL-21-hat" secondAttribute="top" type="default" id="ykp-HF-Mhu"/>
+                            <constraint firstItem="0dW-QB-8rz" firstAttribute="leading" secondItem="acL-7Y-uS0" secondAttribute="leading" type="default" id="yqM-Mr-0X2"/>
+                            <constraint firstItem="qHn-oY-uzJ" firstAttribute="bottom" secondItem="6CL-21-hat" secondAttribute="bottom" type="default" id="yva-X1-cYp"/>
+                            <constraint firstItem="D6G-Vt-9nC" firstAttribute="baseline" secondItem="0dW-QB-8rz" secondAttribute="baseline" type="default" id="z2d-JF-8Cj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagenesAhorcado" destination="rA9-F0-9wU" id="4RR-vK-GF1"/>
+                        <outlet property="palabraOculta" destination="Lg4-OD-WMe" id="AfY-hU-Tj0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ahorcado_0.png" width="286" height="299"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
